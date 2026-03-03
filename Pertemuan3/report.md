@@ -12,7 +12,7 @@ Buatlah script yang:
 3. Menampilkan output juga di terminal menggunakan tee
 4. Menangani error dengan redirect ke ```error.log ```
 
-
+### Jawaban :
 ```
 sudo find /var/log -type f -exec du -h {} + 2>error.log | \
 ```
@@ -63,13 +63,8 @@ Buat pipeline yang:
 3. Mengurutkan alfabetis
 4. Menyimpan ke file sorted-users.txt
 Hint: Gunakan cut, sort, dan operator redirect.
-Latihan 3.2
-Buat pipeline yang:
-1. Membaca /etc/passwd
-2. Mengekstrak username (kolom pertama)
-3. Mengurutkan alfabetis
-4. Menyimpan ke file sorted-users.txt
-Hint: Gunakan cut, sort, dan operator redirect.
+
+### Jawaban :
 ```
 bukan11nya@happyending:~$ cut -d: -f1 /etc/passwd | sort > sorted-users.txt
 ```
@@ -80,6 +75,8 @@ Tulis script monitoring yang:
 2. Menyimpan log dengan timestamp
 3. Berjalan selama 1 menit (12 iterasi)
 4. Output ditampilkan di terminal DAN disimpan ke file
+
+### Jawaban :
 ```
  #!/bin/bash
 
@@ -130,6 +127,8 @@ Implementasikan script backup yang:
 3. Mencatat stdout ke backup-success.log
 4. Mencatat stderr ke backup-error.log
 5. Menambahkan timestamp di setiap log entry
+
+### Jawaban :
 ```
 bukan11nya@happyending:~$ #!/bin/bash
 ```
