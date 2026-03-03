@@ -82,7 +82,7 @@ Tulis script monitoring yang:
 4. Output ditampilkan di terminal DAN disimpan ke file
 ```
 #!/bin/bash
-or i in {1..12}
+for i in {1..12}
 do
    {
      echo "=== Timestamp: $(date) ==="
