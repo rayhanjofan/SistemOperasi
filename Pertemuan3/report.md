@@ -81,7 +81,8 @@ Tulis script monitoring yang:
 3. Berjalan selama 1 menit (12 iterasi)
 4. Output ditampilkan di terminal DAN disimpan ke file
 ```
-#!/bin/bash
+ #!/bin/bash
+
 for i in {1..12}
 do
    {
